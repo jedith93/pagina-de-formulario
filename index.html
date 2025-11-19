@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Únete a Nuestro Equipo - Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="subscriptionForm" class="form-card">
+            <header>
+                <h1>🏃 Únete a nuestro equipo!</h1>
+                <p>Recibe las mejores ofertas en ropa deportiva</p>
+            </header>
+            
+            <div class="discount-banner">
+                <p>🎉 **10% de descuento en tu primera compra!**</p>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+            </div>
+
+            <div class="interest-group">
+                <p>¿Qué te interesa? (opcional)</p>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="calzado" name="intereses" value="Calzado deportivo">
+                    <label for="calzado">Calzado deportivo</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="ropaHombre" name="intereses" value="Ropa para hombre">
+                    <label for="ropaHombre">Ropa para hombre</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="ropaMujer" name="intereses" value="Ropa para mujer">
+                    <label for="ropaMujer">Ropa para mujer</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="accesorios" name="intereses" value="Accesorios">
+                    <label for="accesorios">Accesorios</label>
+                </div>
+            </div>
+
+            <div class="policy-group">
+                <input type="checkbox" id="acepto" name="acepto" required>
+                <label for="acepto">Acepto la <a href="#" class="policy-link">política de privacidad</a> y deseo recibir promociones *</label>
+            </div>
+
+            <button type="submit" class="submit-button">Suscribirme ahora</button>
+        </form>
+
+        <div id="successMessage" class="success-card hidden">
+            <h2>✅ ¡Suscripción Exitosa!</h2>
+            <p>Gracias por unirte a nuestro equipo. Hemos enviado tu código de descuento a tu email.</p>
+            <p><strong>Datos Recopilados:</strong></p>
+            <ul id="collectedDataList">
+                </ul>
+            <button onclick="window.location.reload();">Volver al Formulario</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
